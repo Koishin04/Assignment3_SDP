@@ -4,6 +4,7 @@
 UTF-8
 -d
 out
+src/rume/AppRegistry.java
 src/rume/Candidate.java
 src/rume/CandidateSource.java
 src/rume/CandidateSourceException.java
@@ -11,6 +12,7 @@ src/rume/HousingSearch.java
 src/rume/LegacyCandidateSourceAdapter.java
 src/rume/LegacyHousingService.java
 src/rume/LegacyResult.java
+src/rume/Main.java
 src/rume/RoommateSearch.java
 src/rume/RuMeCandidateSource.java
 src/rume/TenantSearch.java
