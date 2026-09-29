@@ -9,4 +9,6 @@ src/rume/CandidateSource.java
 src/rume/CandidateSourceException.java
 src/rume/HousingSearch.java
 src/rume/RoommateSearch.java
+src/rume/RuMeCandidateSource.java
 src/rume/TenantSearch.java
+src/rume/UniversityCandidateSource.java
