@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+ "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+
+
+<svg width="2253pt" height="1118pt"
+ viewBox="0.00 0.00 2253.20 1118.20" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(21.6 1096.6)">
+<title>RuMe</title>
+<polygon fill="white" stroke="transparent" points="-21.6,21.6 -21.6,-1096.6 2231.6,-1096.6 2231.6,21.6 -21.6,21.6"/>
+<text text-anchor="middle" x="1105" y="-1056.6" font-family="DejaVu Sans" font-size="18.00">RuMe | Bridge + Adapter</text>
+<text text-anchor="middle" x="1105" y="-1036.6" font-family="DejaVu Sans" font-size="18.00">Production class diagram</text>
+
+<g id="node1" class="node">
+<title>Main</title>
+<polygon fill="#f1f4f7" stroke="transparent" points="676,-929.5 676,-964.5 891,-964.5 891,-929.5 676,-929.5"/>
+<text text-anchor="start" x="769" y="-950.5" font-family="DejaVu Sans" font-size="10.00">Client</text>
+<text text-anchor="start" x="768" y="-939.7" font-family="DejaVu Sans" font-weight="bold" font-size="11.00">Main</text>
+<text text-anchor="start" x="683" y="-913.7" font-family="DejaVu Sans" font-size="11.00">+ main(args: String[]): void {static}</text>
+<polygon fill="#8392a3" stroke="#8392a3" points="675,-929.5 675,-929.5 892,-929.5 892,-929.5 675,-929.5"/>
+<polygon fill="none" stroke="#8392a3" points="674.5,-903 674.5,-966 891.5,-966 891.5,-903 674.5,-903"/>
+</g>
+
+<g id="node2" class="node">
+<title>AppRegistry</title>
+<polygon fill="#f1f4f7" stroke="transparent" points="951,-990.5 951,-1025.5 1236,-1025.5 1236,-990.5 951,-990.5"/>
+<text text-anchor="start" x="1049" y="-1011.5" font-family="DejaVu Sans" font-size="10.00">Runtime selection</text>
+<text text-anchor="start" x="1055.5" y="-1000.7" font-family="DejaVu Sans" font-weight="bold" font-size="11.00">AppRegistry</text>
+<text text-anchor="start" x="958" y="-974.7" font-family="DejaVu Sans" font-size="11.00">&#45; sources: Map&lt;String, CandidateSource&gt;</text>
+<text text-anchor="start" x="958" y="-962.7" font-family="DejaVu Sans" font-size="11.00">&#45; searches: Map&lt;String, HousingSearch&gt;</text>
+<text text-anchor="start" x="958" y="-936.7" font-family="DejaVu Sans" font-size="11.00">+ load(): void</text>
+<text text-anchor="start" x="958" y="-924.7" font-family="DejaVu Sans" font-size="11.00">+ registerSource(source: CandidateSource): void</text>
+<text text-anchor="start" x="958" y="-912.7" font-family="DejaVu Sans" font-size="11.00">+ registerSearch(search: HousingSearch): void</text>
+<text text-anchor="start" x="958" y="-900.7" font-family="DejaVu Sans" font-size="11.00">+ getSource(code: String): CandidateSource</text>
+<text text-anchor="start" x="958" y="-888.7" font-family="DejaVu Sans" font-size="11.00">+ getSearch(code: String): HousingSearch</text>
+<text text-anchor="start" x="958" y="-876.7" font-family="DejaVu Sans" font-size="11.00">+ getSourceCodes(): List&lt;String&gt;</text>
+<text text-anchor="start" x="958" y="-864.7" font-family="DejaVu Sans" font-size="11.00">+ getSearches(): List&lt;HousingSearch&gt;</text>
+<text text-anchor="start" x="958" y="-852.7" font-family="DejaVu Sans" font-size="11.00">&#45; normalize(code: String): String</text>
+<polygon fill="#8392a3" stroke="#8392a3" points="950,-990.5 950,-990.5 1237,-990.5 1237,-990.5 950,-990.5"/>
+<polygon fill="#8392a3" stroke="#8392a3" points="950,-952.5 950,-952.5 1237,-952.5 1237,-952.5 950,-952.5"/>
+<polygon fill="none" stroke="#8392a3" points="949.5,-842 949.5,-1027 1236.5,-1027 1236.5,-842 949.5,-842"/>
+</g>
+
+<g id="edge1" class="edge">
+<title>Main&#45;&gt;AppRegistry</title>
+<path fill="none" stroke="#64768c" stroke-dasharray="5,2" d="M891.86,-934.5C907.54,-934.5 923.91,-934.5 940.24,-934.5"/>
+<polygon fill="#64768c" stroke="#64768c" points="949.31,-934.5 940.31,-938.55 944.81,-934.5 940.31,-934.5 940.31,-934.5 940.31,-934.5 944.81,-934.5 940.31,-930.45 949.31,-934.5 949.31,-934.5"/>
+<text text-anchor="middle" x="920.5" y="-940.5" font-family="DejaVu Sans" font-size="10.00">uses</text>
+</g>
+
+<g id="node3" class="node">
+<title>HousingSearch</title>
+<polygon fill="#eaf1fa" stroke="transparent" points="546,-744.5 546,-779.5 1021,-779.5 1021,-744.5 546,-744.5"/>
+<text text-anchor="start" x="731" y="-765.5" font-family="DejaVu Sans" font-size="10.00">Abstraction / abstract</text>
+<text text-anchor="start" x="737" y="-754.7" font-family="DejaVu Sans" font-weight="bold" font-size="11.00">HousingSearch</text>
+<text text-anchor="start" x="553" y="-728.7" font-family="DejaVu Sans" font-size="11.00">&#45; source: CandidateSource</text>
+<text text-anchor="start" x="553" y="-702.7" font-family="DejaVu Sans" font-size="11.00">+ setSource(source: CandidateSource): void</text>
+<text text-anchor="start" x="553" y="-690.7" font-family="DejaVu Sans" font-size="11.00">+ search(city: String, budget: int): List&lt;Candidate&gt; {final}</text>
+<text text-anchor="start" x="553" y="-678.7" font-family="DejaVu Sans" font-size="11.00">+ getCode(): String {abstract}</text>
+<text text-anchor="start" x="553" y="-666.7" font-family="DejaVu Sans" font-size="11.00">+ getDescription(): String {abstract}</text>
+<text text-anchor="start" x="553" y="-654.7" font-family="DejaVu Sans" font-size="11.00">+ getBudgetPrompt(): String {abstract}</text>
+<text text-anchor="start" x="553" y="-642.7" font-family="DejaVu Sans" font-size="11.00"># matchesBudget(candidateBudget: int, requestedBudget: int): boolean {abstract}</text>
+<polygon fill="#8392a3" stroke="#8392a3" points="545,-744.5 545,-744.5 1022,-744.5 1022,-744.5 545,-744.5"/>
+<polygon fill="#8392a3" stroke="#8392a3" points="545,-718.5 545,-718.5 1022,-718.5 1022,-718.5 545,-718.5"/>
+<polygon fill="none" stroke="#8392a3" points="544.5,-632 544.5,-781 1021.5,-781 1021.5,-632 544.5,-632"/>
+</g>
+
+<g id="edge2" class="edge">
+<title>AppRegistry&#45;&gt;HousingSearch</title>
+<path fill="none" stroke="#64768c" d="M967.36,-841.9C942.26,-823.61 916.1,-804.53 891.63,-786.7"/>
+<polygon fill="#64768c" stroke="#64768c" points="884.1,-781.2 893.76,-783.23 887.74,-783.86 891.37,-786.51 891.37,-786.51 891.37,-786.51 887.74,-783.86 888.99,-789.78 884.1,-781.2 884.1,-781.2"/>
+<text text-anchor="middle" x="961" y="-809" font-family="DejaVu Sans" font-size="10.00">searches 0..*</text>
+</g>
+
+<g id="node6" class="node">
+<title>CandidateSource</title>
+<polygon fill="#eaf1fa" stroke="transparent" points="1306,-707.5 1306,-742.5 1558,-742.5 1558,-707.5 1306,-707.5"/>
+<text text-anchor="start" x="1374" y="-728.5" font-family="DejaVu Sans" font-size="10.00">Implementor / interface</text>
+<text text-anchor="start" x="1379" y="-717.7" font-family="DejaVu Sans" font-weight="bold" font-size="11.00">CandidateSource</text>
+<text text-anchor="start" x="1313" y="-691.7" font-family="DejaVu Sans" font-size="11.00">+ getCode(): String</text>
+<text text-anchor="start" x="1313" y="-679.7" font-family="DejaVu Sans" font-size="11.00">+ findByCity(city: String): List&lt;Candidate&gt;</text>
+<polygon fill="#8392a3" stroke="#8392a3" points="1305,-707.5 1305,-707.5 1559,-707.5 1559,-707.5 1305,-707.5"/>
+<polygon fill="none" stroke="#8392a3" points="1305,-669 1305,-744 1559,-744 1559,-669 1305,-669"/>
+</g>
+
+<g id="edge3" class="edge">
+<title>AppRegistry&#45;&gt;CandidateSource</title>
+<path fill="none" stroke="#64768c" d="M1230.4,-841.9C1278.57,-809.78 1330.34,-775.27 1369.36,-749.26"/>
+<polygon fill="#64768c" stroke="#64768c" points="1376.99,-744.18 1371.74,-752.54 1373.24,-746.67 1369.5,-749.17 1369.5,-749.17 1369.5,-749.17 1373.24,-746.67 1367.25,-745.8 1376.99,-744.18 1376.99,-744.18"/>
+<text text-anchor="middle" x="1312" y="-809" font-family="DejaVu Sans" font-size="10.00">sources 0..*</text>
+</g>
+
+<g id="node4" class="node">
+<title>RoommateSearch</title>
+<polygon fill="#eaf1fa" stroke="transparent" points="1,-519.5 1,-554.5 413,-554.5 413,-519.5 1,-519.5"/>
+<text text-anchor="start" x="159" y="-540.5" font-family="DejaVu Sans" font-size="10.00">Refined Abstraction</text>
+<text text-anchor="start" x="152.5" y="-529.7" font-family="DejaVu Sans" font-weight="bold" font-size="11.00">RoommateSearch</text>
+<text text-anchor="start" x="8" y="-503.7" font-family="DejaVu Sans" font-size="11.00">+ getCode(): String</text>
+<text text-anchor="start" x="8" y="-491.7" font-family="DejaVu Sans" font-size="11.00">+ getDescription(): String</text>
+<text text-anchor="start" x="8" y="-479.7" font-family="DejaVu Sans" font-size="11.00">+ getBudgetPrompt(): String</text>
+<text text-anchor="start" x="8" y="-467.7" font-family="DejaVu Sans" font-size="11.00"># matchesBudget(candidateBudget: int, requestedBudget: int): boolean</text>
+<polygon fill="#8392a3" stroke="#8392a3" points="0,-519.5 0,-519.5 414,-519.5 414,-519.5 0,-519.5"/>
+<polygon fill="none" stroke="#8392a3" points="0,-457 0,-556 414,-556 414,-457 0,-457"/>
+</g>
+
+<g id="edge5" class="edge">
+<title>HousingSearch&#45;&gt;RoommateSearch</title>
+<path fill="none" stroke="#64768c" d="M560.27,-628.94C489.06,-604.46 412.22,-578.05 348.45,-556.12"/>
+<polygon fill="none" stroke="#64768c" points="559.39,-631.97 568.93,-631.91 561.44,-626.01 559.39,-631.97"/>
+</g>
+
+<g id="node5" class="node">
+<title>TenantSearch</title>
+<polygon fill="#eaf1fa" stroke="transparent" points="444,-519.5 444,-554.5 856,-554.5 856,-519.5 444,-519.5"/>
+<text text-anchor="start" x="602" y="-540.5" font-family="DejaVu Sans" font-size="10.00">Refined Abstraction</text>
+<text text-anchor="start" x="607.5" y="-529.7" font-family="DejaVu Sans" font-weight="bold" font-size="11.00">TenantSearch</text>
+<text text-anchor="start" x="451" y="-503.7" font-family="DejaVu Sans" font-size="11.00">+ getCode(): String</text>
+<text text-anchor="start" x="451" y="-491.7" font-family="DejaVu Sans" font-size="11.00">+ getDescription(): String</text>
+<text text-anchor="start" x="451" y="-479.7" font-family="DejaVu Sans" font-size="11.00">+ getBudgetPrompt(): String</text>
+<text text-anchor="start" x="451" y="-467.7" font-family="DejaVu Sans" font-size="11.00"># matchesBudget(candidateBudget: int, requestedBudget: int): boolean</text>
+<polygon fill="#8392a3" stroke="#8392a3" points="443,-519.5 443,-519.5 857,-519.5 857,-519.5 443,-519.5"/>
+<polygon fill="none" stroke="#8392a3" points="443,-457 443,-556 857,-556 857,-457 443,-457"/>
+</g>
+
+<g id="edge6" class="edge">
+<title>HousingSearch&#45;&gt;TenantSearch</title>
+<path fill="none" stroke="#64768c" d="M728.26,-624C712.75,-600.92 696.36,-576.52 682.62,-556.06"/>
+<polygon fill="none" stroke="#64768c" points="725.84,-626.06 733.48,-631.77 731.07,-622.54 725.84,-626.06"/>
+</g>
+
+<g id="edge4" class="edge">
+<title>HousingSearch&#45;&gt;CandidateSource</title>
+<path fill="none" stroke="#64768c" d="M1021.9,-706.5C1114.12,-706.5 1216.28,-706.5 1295.57,-706.5"/>
+<polygon fill="#64768c" stroke="#64768c" points="1304.63,-706.5 1295.63,-710.55 1300.13,-706.5 1295.63,-706.5 1295.63,-706.5 1295.63,-706.5 1300.13,-706.5 1295.63,-702.45 1304.63,-706.5 1304.63,-706.5"/>
+<text text-anchor="middle" x="1163.25" y="-712.5" font-family="DejaVu Sans" font-size="10.00">source 0..1</text>
+</g>
+
+<g id="node12" class="node">
+<title>Candidate</title>
+<polygon fill="#f1f4f7" stroke="transparent" points="747,-334.5 747,-369.5 1083,-369.5 1083,-334.5 747,-334.5"/>
+<text text-anchor="start" x="878.5" y="-355.5" font-family="DejaVu Sans" font-size="10.00">Domain model</text>
+<text text-anchor="start" x="883.5" y="-344.7" font-family="DejaVu Sans" font-weight="bold" font-size="11.00">Candidate</text>
+<text text-anchor="start" x="754" y="-318.7" font-family="DejaVu Sans" font-size="11.00">&#45; id: int</text>
+<text text-anchor="start" x="754" y="-306.7" font-family="DejaVu Sans" font-size="11.00">&#45; name: String</text>
+<text text-anchor="start" x="754" y="-294.7" font-family="DejaVu Sans" font-size="11.00">&#45; city: String</text>
+<text text-anchor="start" x="754" y="-282.7" font-family="DejaVu Sans" font-size="11.00">&#45; budget: int</text>
+<text text-anchor="start" x="754" y="-256.7" font-family="DejaVu Sans" font-size="11.00">+ Candidate(id: int, name: String, city: String, budget: int)</text>
+<text text-anchor="start" x="754" y="-244.7" font-family="DejaVu Sans" font-size="11.00">+ getId(): int</text>
+<text text-anchor="start" x="754" y="-232.7" font-family="DejaVu Sans" font-size="11.00">+ getName(): String</text>
+<text text-anchor="start" x="754" y="-220.7" font-family="DejaVu Sans" font-size="11.00">+ getCity(): String</text>
+<text text-anchor="start" x="754" y="-208.7" font-family="DejaVu Sans" font-size="11.00">+ getBudget(): int</text>
+<text text-anchor="start" x="754" y="-196.7" font-family="DejaVu Sans" font-size="11.00">+ toString(): String</text>
+<polygon fill="#8392a3" stroke="#8392a3" points="746,-334.5 746,-334.5 1084,-334.5 1084,-334.5 746,-334.5"/>
+<polygon fill="#8392a3" stroke="#8392a3" points="746,-272.5 746,-272.5 1084,-272.5 1084,-272.5 746,-272.5"/>
+<polygon fill="none" stroke="#8392a3" points="746,-186 746,-371 1084,-371 1084,-186 746,-186"/>
+</g>
+
+<g id="edge12" class="edge">
+<title>HousingSearch&#45;&gt;Candidate</title>
+<path fill="none" stroke="#64768c" stroke-dasharray="5,2" d="M834.95,-632C854.01,-605.04 871,-581 871,-581 871,-581 887.52,-467.8 900.32,-380.13"/>
+<polygon fill="#64768c" stroke="#64768c" points="901.62,-371.19 904.33,-380.68 900.97,-375.64 900.32,-380.09 900.32,-380.09 900.32,-380.09 900.97,-375.64 896.31,-379.51 901.62,-371.19 901.62,-371.19"/>
+<text text-anchor="middle" x="929" y="-504" font-family="DejaVu Sans" font-size="10.00">returns / filters</text>
+</g>
+
+<g id="node7" class="node">
+<title>RuMeCandidateSource</title>
+<polygon fill="#eaf1fa" stroke="transparent" points="1017,-526.5 1017,-561.5 1269,-561.5 1269,-526.5 1017,-526.5"/>
+<text text-anchor="start" x="1088" y="-547.5" font-family="DejaVu Sans" font-size="10.00">Concrete Implementor</text>
+<text text-anchor="start" x="1073" y="-536.7" font-family="DejaVu Sans" font-weight="bold" font-size="11.00">RuMeCandidateSource</text>
+<text text-anchor="start" x="1024" y="-510.7" font-family="DejaVu Sans" font-size="11.00">&#45; candidates: List&lt;Candidate&gt;</text>
+<text text-anchor="start" x="1024" y="-484.7" font-family="DejaVu Sans" font-size="11.00">+ RuMeCandidateSource()</text>
+<text text-anchor="start" x="1024" y="-472.7" font-family="DejaVu Sans" font-size="11.00">+ getCode(): String</text>
+<text text-anchor="start" x="1024" y="-460.7" font-family="DejaVu Sans" font-size="11.00">+ findByCity(city: String): List&lt;Candidate&gt;</text>
+<polygon fill="#8392a3" stroke="#8392a3" points="1016,-526.5 1016,-526.5 1270,-526.5 1270,-526.5 1016,-526.5"/>
+<polygon fill="#8392a3" stroke="#8392a3" points="1016,-500.5 1016,-500.5 1270,-500.5 1270,-500.5 1016,-500.5"/>
+<polygon fill="none" stroke="#8392a3" points="1016,-450 1016,-563 1270,-563 1270,-450 1016,-450"/>
+</g>
+
+<g id="edge7" class="edge">
+<title>CandidateSource&#45;&gt;RuMeCandidateSource</title>
+<path fill="none" stroke="#64768c" stroke-dasharray="5,2" d="M1371.13,-663.79C1328.4,-634.52 1270.79,-595.05 1224.16,-563.11"/>
+<polygon fill="none" stroke="#64768c" points="1369.45,-666.46 1378.66,-668.95 1373.01,-661.27 1369.45,-666.46"/>
+</g>
+
+<g id="node8" class="node">
+<title>UniversityCandidateSource</title>
+<polygon fill="#eaf1fa" stroke="transparent" points="1300,-526.5 1300,-561.5 1564,-561.5 1564,-526.5 1300,-526.5"/>
+<text text-anchor="start" x="1377" y="-547.5" font-family="DejaVu Sans" font-size="10.00">Concrete Implementor</text>
+<text text-anchor="start" x="1347.5" y="-536.7" font-family="DejaVu Sans" font-weight="bold" font-size="11.00">UniversityCandidateSource</text>
+<text text-anchor="start" x="1307" y="-510.7" font-family="DejaVu Sans" font-size="11.00">&#45; candidates: Map&lt;String, List&lt;Candidate&gt;&gt;</text>
+<text text-anchor="start" x="1307" y="-484.7" font-family="DejaVu Sans" font-size="11.00">+ UniversityCandidateSource()</text>
+<text text-anchor="start" x="1307" y="-472.7" font-family="DejaVu Sans" font-size="11.00">+ getCode(): String</text>
+<text text-anchor="start" x="1307" y="-460.7" font-family="DejaVu Sans" font-size="11.00">+ findByCity(city: String): List&lt;Candidate&gt;</text>
+<polygon fill="#8392a3" stroke="#8392a3" points="1299,-526.5 1299,-526.5 1565,-526.5 1565,-526.5 1299,-526.5"/>
+<polygon fill="#8392a3" stroke="#8392a3" points="1299,-500.5 1299,-500.5 1565,-500.5 1565,-500.5 1299,-500.5"/>
+<polygon fill="none" stroke="#8392a3" points="1299,-450 1299,-563 1565,-563 1565,-450 1299,-450"/>
+</g>
+
+<g id="edge8" class="edge">
+<title>CandidateSource&#45;&gt;UniversityCandidateSource</title>
+<path fill="none" stroke="#64768c" stroke-dasharray="5,2" d="M1432,-659.7C1432,-630.93 1432,-593.64 1432,-563.17"/>
+<polygon fill="none" stroke="#64768c" points="1428.85,-659.72 1432,-668.72 1435.15,-659.72 1428.85,-659.72"/>
+</g>
+
+<g id="node9" class="node">
+<title>LegacyCandidateSourceAdapter</title>
+<polygon fill="#eaf1fa" stroke="transparent" points="1596,-544.5 1596,-579.5 1979,-579.5 1979,-544.5 1596,-544.5"/>
+<text text-anchor="start" x="1709" y="-565.5" font-family="DejaVu Sans" font-size="10.00">Adapter / Concrete Implementor</text>
+<text text-anchor="start" x="1688.5" y="-554.7" font-family="DejaVu Sans" font-weight="bold" font-size="11.00">LegacyCandidateSourceAdapter</text>
+<text text-anchor="start" x="1603" y="-528.7" font-family="DejaVu Sans" font-size="11.00">&#45; service: LegacyHousingService</text>
+<text text-anchor="start" x="1603" y="-502.7" font-family="DejaVu Sans" font-size="11.00">+ LegacyCandidateSourceAdapter()</text>
+<text text-anchor="start" x="1603" y="-490.7" font-family="DejaVu Sans" font-size="11.00">+ LegacyCandidateSourceAdapter(service: LegacyHousingService)</text>
+<text text-anchor="start" x="1603" y="-478.7" font-family="DejaVu Sans" font-size="11.00">+ getCode(): String</text>
+<text text-anchor="start" x="1603" y="-466.7" font-family="DejaVu Sans" font-size="11.00">+ findByCity(city: String): List&lt;Candidate&gt;</text>
+<text text-anchor="start" x="1603" y="-454.7" font-family="DejaVu Sans" font-size="11.00">&#45; toCityCode(city: String): int</text>
+<text text-anchor="start" x="1603" y="-442.7" font-family="DejaVu Sans" font-size="11.00">&#45; toCityName(code: int): String</text>
+<polygon fill="#8392a3" stroke="#8392a3" points="1595,-544.5 1595,-544.5 1980,-544.5 1980,-544.5 1595,-544.5"/>
+<polygon fill="#8392a3" stroke="#8392a3" points="1595,-518.5 1595,-518.5 1980,-518.5 1980,-518.5 1595,-518.5"/>
+<polygon fill="none" stroke="#8392a3" points="1594.5,-432 1594.5,-581 1979.5,-581 1979.5,-432 1594.5,-432"/>
+</g>
+
+<g id="edge9" class="edge">
+<title>CandidateSource&#45;&gt;LegacyCandidateSourceAdapter</title>
+<path fill="none" stroke="#64768c" stroke-dasharray="5,2" d="M1505.43,-664.54C1548.57,-640.48 1604.39,-609.35 1654.94,-581.16"/>
+<polygon fill="none" stroke="#64768c" points="1503.85,-661.82 1497.53,-668.95 1506.92,-667.32 1503.85,-661.82"/>
+</g>
+
+<g id="node13" class="node">
+<title>CandidateSourceException</title>
+<polygon fill="#f1f4f7" stroke="transparent" points="1937,-273.5 1937,-308.5 2209,-308.5 2209,-273.5 1937,-273.5"/>
+<text text-anchor="start" x="2003.5" y="-294.5" font-family="DejaVu Sans" font-size="10.00">Common checked exception</text>
+<text text-anchor="start" x="1990" y="-283.7" font-family="DejaVu Sans" font-weight="bold" font-size="11.00">CandidateSourceException</text>
+<text text-anchor="start" x="1944" y="-257.7" font-family="DejaVu Sans" font-size="11.00">+ CandidateSourceException(message: String)</text>
+<polygon fill="#8392a3" stroke="#8392a3" points="1936,-273.5 1936,-273.5 2210,-273.5 2210,-273.5 1936,-273.5"/>
+<polygon fill="none" stroke="#8392a3" points="1936,-247 1936,-310 2210,-310 2210,-247 1936,-247"/>
+</g>
+
+<g id="edge13" class="edge">
+<title>CandidateSource&#45;&gt;CandidateSourceException</title>
+<path fill="none" stroke="#64768c" stroke-dasharray="5,2" d="M1559.18,-677.33C1724.96,-640.6 1994,-581 1994,-581 1994,-581 2041.2,-400.87 2062.63,-319.07"/>
+<polygon fill="#64768c" stroke="#64768c" points="2064.99,-310.07 2066.63,-319.8 2063.85,-314.42 2062.71,-318.77 2062.71,-318.77 2062.71,-318.77 2063.85,-314.42 2058.79,-317.75 2064.99,-310.07 2064.99,-310.07"/>
+<text text-anchor="middle" x="2076.5" y="-504" font-family="DejaVu Sans" font-size="10.00">findByCity throws</text>
+</g>
+
+<g id="node10" class="node">
+<title>LegacyHousingService</title>
+<polygon fill="#f1f4f7" stroke="transparent" points="1645,-322.5 1645,-357.5 1906,-357.5 1906,-322.5 1645,-322.5"/>
+<text text-anchor="start" x="1755" y="-343.5" font-family="DejaVu Sans" font-size="10.00">Adaptee</text>
+<text text-anchor="start" x="1705.5" y="-332.7" font-family="DejaVu Sans" font-weight="bold" font-size="11.00">LegacyHousingService</text>
+<text text-anchor="start" x="1652" y="-306.7" font-family="DejaVu Sans" font-size="11.00">+ SUCCESS: int = 0 {static, final}</text>
+<text text-anchor="start" x="1652" y="-294.7" font-family="DejaVu Sans" font-size="11.00">+ INVALID_REQUEST: int = 1 {static, final}</text>
+<text text-anchor="start" x="1652" y="-282.7" font-family="DejaVu Sans" font-size="11.00">+ UNAVAILABLE: int = 2 {static, final}</text>
+<text text-anchor="start" x="1652" y="-270.7" font-family="DejaVu Sans" font-size="11.00">&#45; available: boolean</text>
+<text text-anchor="start" x="1652" y="-258.7" font-family="DejaVu Sans" font-size="11.00">&#45; records: String[][]</text>
+<text text-anchor="start" x="1652" y="-232.7" font-family="DejaVu Sans" font-size="11.00">+ LegacyHousingService()</text>
+<text text-anchor="start" x="1652" y="-220.7" font-family="DejaVu Sans" font-size="11.00">+ LegacyHousingService(available: boolean)</text>
+<text text-anchor="start" x="1652" y="-208.7" font-family="DejaVu Sans" font-size="11.00">+ loadProfiles(cityCode: int): LegacyResult</text>
+<polygon fill="#8392a3" stroke="#8392a3" points="1644,-322.5 1644,-322.5 1907,-322.5 1907,-322.5 1644,-322.5"/>
+<polygon fill="#8392a3" stroke="#8392a3" points="1644,-248.5 1644,-248.5 1907,-248.5 1907,-248.5 1644,-248.5"/>
+<polygon fill="none" stroke="#8392a3" points="1643.5,-198 1643.5,-359 1906.5,-359 1906.5,-198 1643.5,-198"/>
+</g>
+
+<g id="edge10" class="edge">
+<title>LegacyCandidateSourceAdapter&#45;&gt;LegacyHousingService</title>
+<path fill="none" stroke="#64768c" d="M1783.09,-431.81C1782.01,-411.61 1780.84,-389.5 1779.73,-368.54"/>
+<polygon fill="#64768c" stroke="#64768c" points="1779.24,-359.33 1783.76,-368.1 1779.48,-363.82 1779.72,-368.31 1779.72,-368.31 1779.72,-368.31 1779.48,-363.82 1775.67,-368.53 1779.24,-359.33 1779.24,-359.33"/>
+<text text-anchor="middle" x="1804.5" y="-399" font-family="DejaVu Sans" font-size="10.00">service 1</text>
+</g>
+
+<g id="node11" class="node">
+<title>LegacyResult</title>
+<polygon fill="#f1f4f7" stroke="transparent" points="1639,-88.5 1639,-123.5 1912,-123.5 1912,-88.5 1639,-88.5"/>
+<text text-anchor="start" x="1719.5" y="-109.5" font-family="DejaVu Sans" font-size="10.00">Legacy response / final</text>
+<text text-anchor="start" x="1734" y="-98.7" font-family="DejaVu Sans" font-weight="bold" font-size="11.00">LegacyResult</text>
+<text text-anchor="start" x="1646" y="-72.7" font-family="DejaVu Sans" font-size="11.00">&#45; status: int</text>
+<text text-anchor="start" x="1646" y="-60.7" font-family="DejaVu Sans" font-size="11.00">&#45; records: String[][]</text>
+<text text-anchor="start" x="1646" y="-34.7" font-family="DejaVu Sans" font-size="11.00">+ LegacyResult(status: int, records: String[][])</text>
+<text text-anchor="start" x="1646" y="-22.7" font-family="DejaVu Sans" font-size="11.00">+ getStatus(): int</text>
+<text text-anchor="start" x="1646" y="-10.7" font-family="DejaVu Sans" font-size="11.00">+ getRecords(): String[][]</text>
+<polygon fill="#8392a3" stroke="#8392a3" points="1638,-88.5 1638,-88.5 1913,-88.5 1913,-88.5 1638,-88.5"/>
+<polygon fill="#8392a3" stroke="#8392a3" points="1638,-50.5 1638,-50.5 1913,-50.5 1913,-50.5 1638,-50.5"/>
+<polygon fill="none" stroke="#8392a3" points="1637.5,0 1637.5,-125 1912.5,-125 1912.5,0 1637.5,0"/>
+</g>
+
+<g id="edge11" class="edge">
+<title>LegacyHousingService&#45;&gt;LegacyResult</title>
+<path fill="none" stroke="#64768c" stroke-dasharray="5,2" d="M1775,-197.81C1775,-177 1775,-154.7 1775,-134.38"/>
+<polygon fill="#64768c" stroke="#64768c" points="1775,-125.19 1779.05,-134.19 1775,-129.69 1775,-134.19 1775,-134.19 1775,-134.19 1775,-129.69 1770.95,-134.19 1775,-125.19 1775,-125.19"/>
+<text text-anchor="middle" x="1792.5" y="-153" font-family="DejaVu Sans" font-size="10.00">returns</text>
+</g>
+
+<g id="node14" class="node">
+<title>Exception</title>
+<polygon fill="#f1f4f7" stroke="transparent" points="2019,-44.5 2019,-79.5 2128,-79.5 2128,-44.5 2019,-44.5"/>
+<text text-anchor="start" x="2026" y="-65.5" font-family="DejaVu Sans" font-size="10.00">java.lang / external</text>
+<text text-anchor="start" x="2043" y="-54.7" font-family="DejaVu Sans" font-weight="bold" font-size="11.00">Exception</text>
+<polygon fill="none" stroke="#8392a3" points="2017.5,-44 2017.5,-81 2128.5,-81 2128.5,-44 2017.5,-44"/>
+</g>
+
+<g id="edge14" class="edge">
+<title>CandidateSourceException&#45;&gt;Exception</title>
+<path fill="none" stroke="#64768c" d="M2073,-246.84C2073,-204.88 2073,-130.24 2073,-90.36"/>
+<polygon fill="none" stroke="#64768c" points="2076.15,-90.25 2073,-81.25 2069.85,-90.25 2076.15,-90.25"/>
+</g>
+</g>
+</svg>
