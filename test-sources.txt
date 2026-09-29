@@ -1,4 +1,0 @@
-test/rume/AppRegistryTest.java
-test/rume/CandidateSourceTest.java
-test/rume/HousingSearchTest.java
-test/rume/LegacyCandidateSourceAdapterTest.java
